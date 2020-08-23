@@ -1,0 +1,20 @@
+{
+  "name": "@tridnguyen/money",
+  "version": "1.0.0",
+  "description": "Display money as currency value",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tnguyen14/money.git"
+  },
+  "keywords": ["currency", "usd", "display", "format"],
+  "author": "Tri Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tnguyen14/money/issues"
+  },
+  "homepage": "https://github.com/tnguyen14/money#readme"
+}
