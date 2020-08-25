@@ -1,6 +1,6 @@
 {
   "name": "@tridnguyen/money",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Display money as currency value",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+ssh://git@github.com/tnguyen14/money.git"
   },
-  "keywords": ["currency", "usd", "display", "format"],
+  "keywords": [
+    "currency",
+    "usd",
+    "display",
+    "format"
+  ],
   "author": "Tri Nguyen",
   "license": "ISC",
   "bugs": {
