@@ -6,4 +6,11 @@ export function usd(amount) {
   }
 }
 
-export default usd;
+export function fromUsd(currency) {
+  if (typeof currency == 'string') {
+    currency = parseInt(currency.replace('$', ''));
+  } else if (typeof currency != 'number') {
+    throw new Error(`${currency} is not a supported type`);
+  }
+  return Math.floor(currency * 100);
+}
