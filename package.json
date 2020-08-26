@@ -4,7 +4,7 @@
   "description": "Display money as currency value",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/tnguyen14/money/issues"
   },
-  "homepage": "https://github.com/tnguyen14/money#readme"
+  "homepage": "https://github.com/tnguyen14/money#readme",
+  "devDependencies": {
+    "tap": "^14.10.8"
+  }
 }
