@@ -10,10 +10,13 @@ export function usd(amount, asNumber = false) {
 }
 
 export function fromUsd(currency) {
+  if (!currency) {
+    throw new Error('A currency is required');
+  }
   if (typeof currency == 'string') {
-    currency = parseInt(currency.replace('$', ''));
+    currency = parseFloat(currency.replace('$', ''));
   } else if (typeof currency != 'number') {
     throw new Error(`${currency} is not a supported type`);
   }
-  return Math.floor(currency * 100);
+  return parseInt((currency * 100).toFixed());
 }
