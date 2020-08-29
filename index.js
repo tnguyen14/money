@@ -6,7 +6,7 @@ function usd(amount, asNumber = false) {
   if (asNumber) {
     return currency
   }
-  return `$${currency.toFixed(2)}`;
+  return `$${currency.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
 }
 
 function fromUsd(currency) {

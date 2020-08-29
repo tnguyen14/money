@@ -7,6 +7,7 @@ tap.test('money', (t) => {
       t.equal(usd(), '$0.00');
       t.equal(usd(4300), '$43.00');
       t.equal(usd(45), '$0.45');
+      t.equal(usd(154300), '$1,543.00');
       t.end();
     });
     t.test('get currency as number', (t) => {
