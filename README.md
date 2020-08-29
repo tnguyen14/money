@@ -10,6 +10,7 @@ This is the default. The amount needs to be in cents (whole integer).
 import { usd, fromUsd } from "@tridnguyen/money";
 
 usd(2020); // $20.20
+usd(145230); // $1,452.30
 usd(); // $0.00
 
 usd(10032, true); // 100.32
