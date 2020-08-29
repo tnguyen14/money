@@ -14,7 +14,7 @@ function fromUsd(currency) {
     throw new Error('A currency is required');
   }
   if (typeof currency == 'string') {
-    currency = parseFloat(currency.replace('$', ''));
+    currency = parseFloat(currency.replace(/\$/g, '').replace(/,/g, ''));
   } else if (typeof currency != 'number') {
     throw new Error(`${currency} is not a supported type`);
   }

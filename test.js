@@ -19,8 +19,8 @@ tap.test('money', (t) => {
   });
   t.test('fromUsd', (t) => {
     t.equal(fromUsd(10.03), 1003);
-    t.equal(fromUsd('540.32'), 54032);
-    t.equal(fromUsd('$0.43'), 43);
+    t.equal(fromUsd('540.32$'), 54032);
+    t.equal(fromUsd('$1,234.43'), 123443);
     try {
       fromUsd();
       t.ok(false);
