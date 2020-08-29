@@ -1,4 +1,4 @@
-export function usd(amount, asNumber = false) {
+function usd(amount, asNumber = false) {
   let currency = 0;
   if (amount) {
     currency = amount / 100;
@@ -9,7 +9,7 @@ export function usd(amount, asNumber = false) {
   return `$${currency.toFixed(2)}`;
 }
 
-export function fromUsd(currency) {
+function fromUsd(currency) {
   if (!currency) {
     throw new Error('A currency is required');
   }
@@ -20,3 +20,8 @@ export function fromUsd(currency) {
   }
   return parseInt((currency * 100).toFixed());
 }
+
+module.exports = {
+  usd,
+  fromUsd
+};
