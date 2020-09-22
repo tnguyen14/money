@@ -8,6 +8,11 @@
     "import": "dist/index.js",
     "require": "index.js"
   },
+  "files": [
+    "dist",
+    "index.js",
+    "README.md"
+  ],
   "scripts": {
     "test": "tap --reporter spec"
   },
