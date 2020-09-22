@@ -1,4 +1,4 @@
-import {usd as iUsd, fromUsd as iFromUsd} from './';
+const money = require('./');
 
-export const usd = iUsd;
-export const fromUsd = iFromUsd;
+export const usd = money.usd;
+export const fromUsd = money.fromUsd;
