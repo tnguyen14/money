@@ -1,6 +1,6 @@
 {
   "name": "@tridnguyen/money",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "Display money as currency value",
   "main": "index.js",
   "module": "dist/index.js",
