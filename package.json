@@ -3,6 +3,10 @@
   "version": "1.4.0",
   "description": "Display money as currency value",
   "main": "index.js",
+  "exports": {
+    "import": "module.js",
+    "require": "index.js"
+  },
   "scripts": {
     "test": "tap --reporter spec"
   },
