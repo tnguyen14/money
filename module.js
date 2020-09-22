@@ -1,4 +1,4 @@
-import * as money from './';
+import {usd as iUsd, fromUsd as iFromUsd} from './';
 
-export const usd = money.usd;
-export const fromUsd = money.fromUsd;
+export const usd = iUsd;
+export const fromUsd = iFromUsd;
