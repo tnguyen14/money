@@ -3,9 +3,9 @@
   "version": "1.5.6",
   "description": "Display money as currency value",
   "main": "index.js",
-  "module": "index.js",
+  "module": "dist/index.js",
   "exports": {
-    "import": "module.js",
+    "import": "dist/index.js",
     "require": "index.js"
   },
   "scripts": {
