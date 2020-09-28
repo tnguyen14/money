@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "test": "tap --reporter spec",
-    "prepublishOnly": "rollup index.js -f es -d dist"
+    "prepublishOnly": "npx rollup index.js -f es -d dist"
   },
   "repository": {
     "type": "git",
