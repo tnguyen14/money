@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "exports": {
     "import": "dist/index.js",
-    "require": "index.js"
+    "require": "./index.js"
   },
   "files": [
     "dist",
