@@ -1,9 +1,24 @@
+function fromCents(amount) {
+  if (!Number.isSafeInteger(amount)) {
+    throw new Error('amount needs to be an integer');
+  }
+  return amount / 100;
+}
+
+function toCents(amount) {
+  if (Number.isNaN(parseFloat(amount))) {
+    throw new Error('amount needs to be a number');
+  }
+  return parseInt((parseFloat(amount) * 100).toFixed());
+}
+
 function usd(amount, asNumber = false) {
   let currency = 0;
   if (amount) {
-    currency = amount / 100;
+    currency = fromCents(parseInt(amount));
   }
   if (asNumber) {
+    console.log('asNumber is deprecated, use fromCents');
     return currency
   }
   return `$${currency.toLocaleString(undefined, {
@@ -21,10 +36,12 @@ function fromUsd(currency) {
   } else if (typeof currency != 'number') {
     throw new Error(`${currency} is not a supported type`);
   }
-  return parseInt((currency * 100).toFixed());
+  return toCents(currency);
 }
 
 module.exports = {
+  fromCents,
+  toCents,
   usd,
   fromUsd
 };
