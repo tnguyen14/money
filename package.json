@@ -5,8 +5,11 @@
   "main": "index.js",
   "module": "dist/index.js",
   "exports": {
-    "import": "./dist/index.js",
-    "require": "./index.js"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./index.js"
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist",
