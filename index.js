@@ -14,17 +14,23 @@ function toCents(amount) {
 
 function usd(amount, asNumber = false) {
   let currency = 0;
+  let negative = false;
   if (amount) {
+    if (amount < 0) {
+      amount = -amount; //convert to positive to later operations
+      negative = true;
+    }
     currency = fromCents(parseInt(amount));
   }
   if (asNumber) {
     console.log('asNumber is deprecated, use fromCents');
     return currency
   }
-  return `$${currency.toLocaleString(undefined, {
+  const formatted = `$${currency.toLocaleString(undefined, {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   })}`;
+  return negative ? `(${formatted})` : formatted;
 }
 
 function fromUsd(currency) {

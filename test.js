@@ -28,6 +28,7 @@ tap.test('money', (t) => {
       t.equal(usd(154300), '$1,543.00');
       t.equal(usd(984.3), '$9.84');
       t.equal(usd(984.9), '$9.84');
+      t.equal(usd(-1234), '($12.34)', 'Negative number');
       t.end();
     });
     t.test('get currency as number', (t) => {
